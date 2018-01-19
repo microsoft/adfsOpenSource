@@ -11,28 +11,28 @@ If a customer might want to use it, and it can be shipped out-of-band with ADFS,
 
 ## Release Requirements
 
-    ### * Code:
-        Must have core functionality working 
-            Okay to have items marked as "TODO", "bug", etc. in dev branch (must be resolved before merging to release branch) 
+### * Code:
+Must have core functionality working 
+Okay to have items marked as "TODO", "bug", etc. in dev branch (must be resolved before merging to release branch) 
         
-    ### * Documentation:
-        Must have basic documentation covering the following:  
+### * Documentation:
+Must have basic documentation covering the following:  
     
-            i. Project Overview (what is this project?)
-            ii. Requirements to install (what do I need to have to run this project?)
-            iii. Steps to install (how do I install/deploy this project?
-            iv. Usage steps and examples (how do I use this project?)
-            v. Contributing changes (how do I make changes to this project? How do I validate I didn't break anything?) 
-            vi. Any special notes that are important for this project, where applicable 
+* Project Overview (what is this project?)
+* Requirements to install (what do I need to have to run this project?)
+* Steps to install (how do I install/deploy this project?
+* Usage steps and examples (how do I use this project?)
+* Contributing changes (how do I make changes to this project? How do I validate I didn't break anything?) 
+* Any special notes that are important for this project, where applicable 
         
-    ### * Tests:
+### * Tests:
     
-        All projects must have a base level of test coverage, or a proposed plan for implementing test coverage. 
-        Test coverage can include: internal DFTs or internal production deployment. However, this is discouraged, as tests should allow contributors to validate that changes they have made did not break existing behavior
+All projects must have a base level of test coverage, or a proposed plan for implementing test coverage. 
+Test coverage can include: internal DFTs or internal production deployment. However, this is discouraged, as tests should allow contributors to validate that changes they have made did not break existing behavior
     
-    ### * Code review:
+### * Code review:
     
-        Every change must be reviewed in accordance with the review process (see below) 
+Every change must be reviewed in accordance with the review process (see below) 
 
 ## Code Review Process
 
