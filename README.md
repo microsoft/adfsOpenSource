@@ -1,5 +1,59 @@
+# ADFS Open Source Guidance
 
-# Contributing
+## What Belongs on ADFS Open Source?
+
+All public scripts or tools related to ADFS diagnosability, debugging, management, etc. that are not strictly part of the ADFS codebase
+
+All pluggable components that are not strictly part of the ADFS codebase
+    Authentication adapters, relying parties, web customizations, etc. 
+
+If a customer might want to use it, and it can be shipped out-of-band with ADFS, we should put it on GitHub 
+
+## Release Requirements
+
+    ### * Code:
+        Must have core functionality working 
+            Okay to have items marked as "TODO", "bug", etc. in dev branch (must be resolved before merging to release branch) 
+        
+    ### * Documentation:
+        Must have basic documentation covering the following:  
+    
+            i. Project Overview (what is this project?)
+            ii. Requirements to install (what do I need to have to run this project?)
+            iii. Steps to install (how do I install/deploy this project?
+            iv. Usage steps and examples (how do I use this project?)
+            v. Contributing changes (how do I make changes to this project? How do I validate I didn't break anything?) 
+            vi. Any special notes that are important for this project, where applicable 
+        
+    ### * Tests:
+    
+        All projects must have a base level of test coverage, or a proposed plan for implementing test coverage. 
+        Test coverage can include: internal DFTs or internal production deployment. However, this is discouraged, as tests should allow contributors to validate that changes they have made did not break existing behavior
+    
+    ### * Code review:
+    
+        Every change must be reviewed in accordance with the review process (see below) 
+
+## Code Review Process
+
+Must have at least one reviewer sign-off when doing a pull request to a dev branch
+Must have mattbo sign-off on pull request going from dev branch to release (master) 
+
+## Project Structure for Repositories 
+
+Main repository for collection of similar items 
+Individual projects under top-level 
+
+## Branching
+
+Release branch (master), with tags at each major release 
+Dev branch for pre-release 
+Feature branch off of dev branch for any bug fix, feature addition, doc change, etc. 
+Debug branch where appropriate (for example, maintaining JavaScript with verbose logging) 
+
+![Branchest](./images/branches.png)
+
+## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
@@ -13,7 +67,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-# Legal Notices
+## Legal Notices
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
 in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
