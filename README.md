@@ -2,21 +2,27 @@
 
 ## What Belongs on ADFS Open Source?
 
-All public scripts or tools related to ADFS diagnosability, debugging, management, etc. that are not strictly part of the ADFS codebase
+ADFS Open Source projects should provide some benefit to ADFS customers, but not require internal ADFS changes. The general guidance for ADFS Open Source projects is that if a customer might want to use it, and it can be shipped out-of-band with ADFS, we should put it on GitHub. 
 
-All pluggable components that are not strictly part of the ADFS codebase
-    Authentication adapters, relying parties, web customizations, etc. 
+Examples of projects that belong on ADFS Open Source include
 
-If a customer might want to use it, and it can be shipped out-of-band with ADFS, we should put it on GitHub 
+* All public scripts or tools related to ADFS diagnosability, debugging, management, etc. that are not strictly part of the ADFS codebase
+
+* All pluggable components that are not strictly part of the ADFS codebase (authentication adapters, relying parties, web customizations, etc.) 
+
+## Who Supports ADFS Open Source?
+
+The ADFS Product Group is invested in each project available through ADFS Open Source. However, there is no SLA for change requests, and no servicing process for hot fixes. A benefit of open source projects it that they are community-owned, so any bugs that are discovered, or feature requests that are proposed can be implemented by anyone in the community. 
 
 ## Release Requirements
 
 ### * Code:
-Must have core functionality working 
-Okay to have items marked as "TODO", "bug", etc. in dev branch (must be resolved before merging to release branch) 
+Before releasing a new project, or a change to an existing project, the contribution must have some core functionality working.  
+
+It is acceptable to have items marked as "TODO", "bug", etc. in the Dev branch of a project, but these issues must be resolved before merging to the release branch.
         
 ### * Documentation:
-Must have basic documentation covering the following:  
+All new projects must have basic documentation covering the following:  
     
 * Project Overview (what is this project?)
 * Requirements to install (what do I need to have to run this project?)
@@ -28,58 +34,35 @@ Must have basic documentation covering the following:
 ### * Tests:
     
 All projects must have a base level of test coverage, or a proposed plan for implementing test coverage. 
-Test coverage can include: internal DFTs or internal production deployment. However, this is discouraged, as tests should allow contributors to validate that changes they have made did not break existing behavior
+
+Test coverage can include internal ADFS tests or internal production deployment. However, this is discouraged, as tests should allow community contributors to validate that their changes have not broken existing behavior.
     
 ### * Code review:
     
 Every change must be reviewed in accordance with the review process (see below) 
 
-## Code Review Process
-
-Must have at least one reviewer sign-off when doing a pull request to a dev branch
-Must have mattbo sign-off on pull request going from dev branch to release (master) 
-
-## Project Structure for Repositories 
-
-Main repository for collection of similar items 
-Individual projects under top-level 
-
 ## Branching
 
-Release branch (master), with tags at each major release 
-Dev branch for pre-release 
-Feature branch off of dev branch for any bug fix, feature addition, doc change, etc. 
-Debug branch where appropriate (for example, maintaining JavaScript with verbose logging) 
+Each project should contain two long-lived branches:
+* A Release branch (master), with tags at each major release, and 
+* A Dev branch for pre-release changes and stabilization 
+
+All changes should be made in Feature branches first. Feature branches should be off the Dev branch for any bug fix, feature addition, doc change, etc. 
+
+Each project should maintain a long-lived Debug branch where appropriate (for example, maintaining JavaScript with verbose logging) 
 
 ![Branchest](./images/branches.png)
 
-## Contributing
+## Code Review Process
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+Each change will be reviewed when the Feature branch for the change is being merged to the Dev branch. Pull request must have at least one reviewer sign-off before merging to Dev. In the case where the merge is occuring from a forked project into the primary project Dev branch, this review sign-off will have to be by an ADFS Open Source team administrator.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+Each change will also be batch-reviewed for release when the Dev branch is periodically merged to master. This review process will require sign-off from an ADFS Open Source team administrator.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## Project Structure for Repositories 
 
-## Legal Notices
+Each repository will be a collection of similar projects. The main repository should contain a readme with links to, and descriptions of, each project in the repo. 
 
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE) file.
+## Project Release Cadence 
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
-may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
-
-Privacy information can be found at https://privacy.microsoft.com/en-us/
-
-Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+Each project will maintain its own release cadence. Most projects will be released on an as-needed basis, and not on a calendar release basis. When the project owners feel that enough changes exist in the Dev branch to warrent a new release, a release will occur.  
