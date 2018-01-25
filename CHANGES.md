@@ -33,7 +33,7 @@ When you click "fork", you will be asked to sign in if you haven't already. When
 
 Once you have a forked projec, you will need to clone that project to your local machine. 
     
-> *What's the Difference Between a Fork and a Clone?* - A fork is a split from a public project. A fork is a complete, stand-alone copy of another project.
+> *What's the Difference Between a Fork and a Clone?* A fork is a split from a public project. A fork is a complete, stand-alone copy of another project.
 > A clone is a local instance of a repository. All repositories live on the GitHub servers, which forms the "remote" version of the repository. When you clone a repository, you create a "local" version, which lives on your machine. Changes that are made to either the remote or local versions will be synced together when you run `git push` or `git pull`. 
 
 To clone your project, go to the GitHub page of the project, and locate the clone button on the right side. 
@@ -44,15 +44,15 @@ Next, copy the link that is given.
     
 In PowerShell on your local machine, navigate to the folder where you will keep all your git projects (for us, it's `F:/git`).
     
-    `PS > cd F:/git`
+    PS > cd F:/git
 
 Now clone the project using "git clone", like this:
 
-    `PS > git clone <link>` 
+    PS > git clone <link>
 
 For example
     
-    `PS > git clone https://github.com/octocat/Spoon-Knife.git` 
+    PS > git clone https://github.com/octocat/Spoon-Knife.git
     
 This will create a new folder under `F:/git`, called `F:/git/Spoon-Knife`. This new folder contains all the code in the project you cloned. 
 
@@ -64,8 +64,8 @@ In git, all changes should be made on a new branch. A branch is just a way to or
 
 First, you must decide on a branch name. Generally the name should be short, and descriptive of what the change will be. For example, `fixLoggingBug` or `addTelemetryFeature`.
     
-    `PS > cd F:/git/Spoon-Knife`
-    `PS > git branch -b myBranchName`
+    PS > cd F:/git/Spoon-Knife
+    PS > git branch -b myBranchName
 
 You have now created a new branch. To switch between branches, run `git checkout <branchname>`.
     
@@ -77,31 +77,31 @@ Git keeps track of your changes as you make them. When you are satisfied, you ca
     
 First, in PowerShell, navigate to the folder with your project.
     
-    `PS > cd F:/git/Spoon-Knife/`
+    PS > cd F:/git/Spoon-Knife/
     
 Now, let's check the status of our changes
     
-    `PS > git status`
+    PS > git status
     
 On the command line, you will see all the changes you have made. Your changes should show up in red letters under "changes not staged for commit". You can now choose which files you want to add to this new commit. You can add them individually by name, or use "." to add all of them.
     
-    `PS > git add <filename>`
+    PS > git add <filename>
 
     Or
 
-    `PS > git add . `
+    PS > git add . 
     
 Now let's check the status again
     
-    `PS > git status`
+    PS > git status
     
 Your changes should be in green letters under "changes to be committed". Now we're ready to commit. We will use the `git commit` command, and supply a short message describing what the changes are. 
     
-    `PS > git commit -m "Message for this commit" `
+    PS > git commit -m "Message for this commit" 
     
 Now we have a new commit in our local repository. Let's sync this change up to our remote project on GitHub. 
     
-    `PS > git push `
+    PS > git push 
 
     (Note: if this is the first time you are pushing, Git will give you a command to run to set-upstream. Copy that command and run it)
     
