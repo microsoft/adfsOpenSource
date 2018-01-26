@@ -10,11 +10,14 @@ All ADFS Open Source projects are hosted on GitHub. To view and download code, y
 
 ## Set Up Your Development Machine
 
-1. [Install Git](https://www.atlassian.com/git/tutorials/install-git#windows) 
+1. [Install Git](https://www.atlassian.com/git/tutorials/install-git#windows):
+
     Git is the go-to choice for version control. It's the tool you will use to commit new code. 
+
     For more, read ['What is Git?'](https://www.atlassian.com/git/tutorials/what-is-git)
 
-2. Create a directory for your code
+2. Create a directory for your code:
+
     It's a good idea to keep all your git projects together in one place.
     For this tutorial, we will create the folder `F:/git` to hold all our projects.
 
@@ -27,13 +30,14 @@ To fork a project, locate the GitHub project you wish to fork, and then, in the 
     
 ![Fork Button](./images/fork_button.png)
     
-When you click "fork", you will be asked to sign in if you haven't already. When the fork is complete, you will have your own copy of the public project you chose to fork. 
+When you click "fork", you will be asked to sign in if you haven't already. When the fork is complete, you will have your own copy of the public project. 
 
 ## Clone Your Forked Project
 
-Once you have a forked projec, you will need to clone that project to your local machine. 
+Once you have a forked project, you will need to clone that project to your local machine. 
     
-> *What's the Difference Between a Fork and a Clone?* A fork is a split from a public project. A fork is a complete, stand-alone copy of another project.
+> *What's the Difference Between a Fork and a Clone?* A fork is a split from a public project, which forms a complete, stand-alone copy of that project.
+
 > A clone is a local instance of a repository. All repositories live on the GitHub servers, which forms the "remote" version of the repository. When you clone a repository, you create a "local" version, which lives on your machine. Changes that are made to either the remote or local versions will be synced together when you run `git push` or `git pull`. 
 
 To clone your project, go to the GitHub page of the project, and locate the clone button on the right side. 
