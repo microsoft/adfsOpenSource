@@ -69,7 +69,7 @@ In git, all changes should be made on a new branch. A branch is just a way to or
 First, you must decide on a branch name. Generally the name should be short, and descriptive of what the change will be. For example, `fixLoggingBug` or `addTelemetryFeature`.
     
     PS > cd F:/git/Spoon-Knife
-    PS > git branch -b myBranchName
+    PS > git checkout -b myBranchName
 
 You have now created a new branch. To switch between branches, run `git checkout <branchname>`.
     
