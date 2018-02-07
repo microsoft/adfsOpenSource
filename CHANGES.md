@@ -1,12 +1,30 @@
-# How To Contribute Changes
+# Contributing to AD FS Open Source
 
 ## Overview 
 
-This is a beginner's guide to make contributions to an ADFS Open Source project. This guide will teach you the basics you need to start contributing to an ADFS Open Source project. 
+This is a beginner's guide to making contributions to an AD FS Open Source project. This guide will teach you the basics you need to start contributing to an AD FS Open Source project, including what the best ways are to contribute.
+
+## What Can I Contribute?
+
+There are numerous ways to help the AD FS Open Source community. 
+
+1. Help fix open issues on your favorite projects: 
+
+    Each GitHub project has an "Issues" tab, which lists the current bugs or feature requests on the project. Take a look at the issues marked "Help Wanted" (beginners can look for issues marked "Good First Issue"). Fixing issues is the fastest way to make an impact. 
+
+2. Add a new project to an existing repository: 
+
+    Most of our repositories contain multiple, independent projects. If you have a project that you think fits with one of our existing repositories, please open a pull request with your changes. 
+
+3. Propose a new repository: 
+
+    If you have a project that doesn't fit with any of the current repositories, feel free to open a pull request against this repository, and we can create a new repository to route your project into. 
+
+# How To Contribute Changes
 
 ## Create a GitHub Account 
 
-All ADFS Open Source projects are hosted on GitHub. To view and download code, you do not need an account. However, if you wish to contribute changes or updates, you will need to sign up [here](https://github.com/join?source=header-home)
+All AD FS Open Source projects are hosted on GitHub. To view and download code, you do not need an account. However, if you wish to contribute changes or updates, you will need to sign up [here](https://github.com/join?source=header-home)
 
 ## Set Up Your Development Machine
 
@@ -113,7 +131,7 @@ We're all done! Your new commit has now been pushed to the remote repository.
 
 ## Pull Your Changes to the Original Public Project
 
-Now that you have changes made to your forked project, let's bring them back into the original ADFS Open Source project. 
+Now that you have changes made to your forked project, let's bring them back into the original AD FS Open Source project. 
     
 First, go to the GitHub page for your forked project, and locate the "Pull Requests" tab. 
     
@@ -125,10 +143,10 @@ From there, create a new pull request
 
 For the "compare" branch, choose the branch you created for your changes: `myBranchName`
     
-For the "base" branch, locate the Dev branch of the original public project. For most ADFS Open Source projects, there will be a Dev branch. However, if there is not, choose the "master" branch. Be sure that you choose the branch from the original public project, and not your forked project. 
+For the "base" branch, locate the Dev branch of the original public project. For most AD FS Open Source projects, there will be a Dev branch. However, if there is not, choose the "master" branch. Be sure that you choose the branch from the original public project, and not your forked project. 
 
 ![Compare Branch](./images/compare_branch.png)
     
-Now, on the right side, under "Reviewers", locate a member of the ADFS Open Source team. The most common choice is `bongiovimatthew-microsoft`. 
+Now, on the right side, under "Reviewers", locate a member of the AD FS Open Source team. The most common choice is `bongiovimatthew-microsoft`. 
     
-Select "Create Pull Request", and you're done. Your changes will be reviewed by the ADFS Open Source community, and when the changes have been approved, they will be merged into the original public project. 
+Select "Create Pull Request", and you're done. Your changes will be reviewed by the AD FS Open Source community, and when the changes have been approved, they will be merged into the original public project. 
