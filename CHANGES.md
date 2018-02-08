@@ -2,7 +2,9 @@
 
 ## Overview 
 
-This is a beginner's guide to making contributions to an AD FS Open Source project. This guide will teach you the basics you need to start contributing to an AD FS Open Source project, including what the best ways are to contribute.
+Thank you for considering contributing to an AD FS Open Source project. It's contributors like you who make these projects work. 
+
+Below is a beginner's guide to making contributions to an AD FS Open Source project. This guide will teach you the basics you need to start contributing to an AD FS Open Source project, including what the best ways are to contribute.
 
 ## What Can I Contribute?
 
