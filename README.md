@@ -55,7 +55,7 @@ Each project should maintain a long-lived Debug branch where appropriate (for ex
 
 ## Code Review Process
 
-Each change will be reviewed when the Feature branch for the change is being merged to the Dev branch. Pull request must have at least one reviewer sign-off before merging to Dev. In the case where the merge is occuring from a forked project into the primary project Dev branch, this review sign-off will have to be by an ADFS Open Source team administrator.
+Each change will be reviewed when the Feature branch for the change is being merged to the Dev branch. Pull request must have at least one reviewer sign-off before merging to Dev. In the case where the merge is occurring from a forked project into the primary project Dev branch, this review sign-off will have to be by an ADFS Open Source team administrator.
 
 Each change will also be batch-reviewed for release when the Dev branch is periodically merged to master. This review process will require sign-off from an ADFS Open Source team administrator.
 
@@ -65,4 +65,4 @@ Each repository will be a collection of similar projects. The main repository sh
 
 ## Project Release Cadence 
 
-Each project will maintain its own release cadence. Most projects will be released on an as-needed basis, and not on a calendar release basis. When the project owners feel that enough changes exist in the Dev branch to warrent a new release, a release will occur.  
+Each project will maintain its own release cadence. Most projects will be released on an as-needed basis, and not on a calendar release basis. When the project owners feel that enough changes exist in the Dev branch to warrant a new release, a release will occur.  
